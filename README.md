@@ -11,9 +11,6 @@ rcodes -> PSM 분석 진행
 ./build.sh
 ```
 ```bash
-./run.sh
-```
-```bash
 ./run_sas2csv.sh
 ```
 ### 윈도우
