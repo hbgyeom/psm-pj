@@ -5,7 +5,7 @@ git clone https://github.com/hbgyeom/psm-pj.git
 ```
 
 # sas2csv.py
-.sas7bdat -> .csv
+sas_data 디렉토리 안에 있는 .sas7bdat 파일들을 일괄 csv로 변환해줌
 ```bash
 pip install pyreadstat
 ```
