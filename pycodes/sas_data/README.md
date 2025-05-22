@@ -1,1 +1,1 @@
-https://knhanes.kdca.go.kr/knhanes/main.do (국민건강영양조사)
+Data in this directory can be downloaded from https://knhanes.kdca.go.kr/knhanes/rawDataDwnld/rawDataDwnld.do
