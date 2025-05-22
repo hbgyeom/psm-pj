@@ -1,0 +1,5 @@
+/pycode/sas_data/
+/pycode/csv_data/
+
+*.sas7bdat
+*.csv
