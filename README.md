@@ -3,7 +3,7 @@
 git clone https://github.com/hbgyeom/psm-pj.git
 ```
 ## 디렉토리 설명
-pycodes -> 데이터 변환 및 전처리
+pycodes -> 데이터 변환 및 전처리\n
 rcodes -> PSM 분석 진행
 ## pycodes
 ### sas2csv.py
