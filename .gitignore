@@ -1,5 +1,8 @@
-/pycode/sas_data/
-/pycode/csv_data/
+/pycode/sas_data/*
+!/pycode/sas_data/README.md
+
+/pycode/csv_data/*
+!/pycode/csv_data/README.md
 
 *.sas7bdat
 *.csv
