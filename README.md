@@ -2,7 +2,7 @@
 ```bash
 git clone https://github.com/hbgyeom/psm-pj.git
 ```
-## 연구 설명
+## 대상자 분류 기준
 ### 변수 설명
 - BS3_1 - 현재 일반담배(궐련) 흡연 여부
 - BS12_47 - 궐련형 전자담배 현재사용여부
