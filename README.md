@@ -27,5 +27,21 @@ rcodes -> PSM 분석 진행
 ## pycodes
 ### sas2csv.py
 sas_data 디렉토리 안에 있는 .sas7bdat 파일들을 일괄 csv로 변환
+```
+Converted: hn19_all.csv
+Converted: hn18_all.csv
+Converted: hn22_all.csv
+Converted: hn23_all.csv
+Converted: hn20_all.csv
+Converted: hn21_all.csv
+```
 ### row-filter.py
 csv_data 디렉토리 안에 있는 .csv 파일들을 대상자 분류 기준에 따라 필터링
+```
+Filtered: row_hn22_all.csv - 596 rows
+Filtered: row_hn19_all.csv - 681 rows
+Filtered: row_hn20_all.csv - 666 rows
+Filtered: row_hn21_all.csv - 617 rows
+Filtered: row_hn23_all.csv - 626 rows
+Filtered: row_hn18_all.csv - 746 rows
+```
