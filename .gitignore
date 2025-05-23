@@ -4,5 +4,8 @@
 /pycode/csv_data/*
 !/pycode/csv_data/README.md
 
+/pycode/row_data/*
+!/pycode/row_data/README.md
+
 *.sas7bdat
 *.csv
