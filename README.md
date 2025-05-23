@@ -26,12 +26,6 @@ pycodes -> 데이터 변환 및 전처리
 rcodes -> PSM 분석 진행
 ## pycodes
 ### sas2csv.py
-sas_data 디렉토리 안에 있는 .sas7bdat 파일들을 일괄 csv로 변환해줌
-```bash
-pip install pyreadstat
-```
-```python
-python sas2csv.py
-```
+sas_data 디렉토리 안에 있는 .sas7bdat 파일들을 일괄 csv로 변환
 ### row-filter.py
-csv_data 디렉토리 안에 있는 .csv 파일들을 아래 조건으로 필터링
+csv_data 디렉토리 안에 있는 .csv 파일들을 대상자 분류 기준에 따라 필터링
