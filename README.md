@@ -15,3 +15,15 @@ pip install pyreadstat
 ```python
 python sas2csv.py
 ```
+### row-filter.py
+csv_data 디렉토리 안에 있는 .csv 파일들을 아래 조건으로 필터링
+
+BS3_1 - 현재 일반담배(궐련) 흡연 여부
+
+BS12_47 - 궐련형 전자담배 현재사용여부
+
+1. 매일피움
+2. 가끔피움
+3. 과거엔 피웠으나, 현재 피우지 않음
+8. 비해당(문항4-②⑧)
+9. 모름, 무응답
