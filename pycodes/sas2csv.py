@@ -14,5 +14,5 @@ for f in os.listdir("sas_data"):
             df.to_csv(output_path, index=False, encoding="utf-8")
             print(f"Converted: {csv_name}")
 
-        except Exception:
-            print(f"Failed: {f}")
+        except Exception as e:
+            print(f"Failed: {f} - {e}")
