@@ -3,6 +3,14 @@ import pandas as pd
 
 cols = None
 
+for f in os.listdir("csv_data"):
+    if f.endswith(".csv"):
+        df = pd.read_csv(os.path.join("csv_data", f), nrows=0)
+        if cols is None:
+            cols = list(df.columns)
+        else:
+            cols = [c for c in cols if c in df.columns]
+
 os.makedirs("filter_data", exist_ok=True)
 
 for f in os.listdir("csv_data"):
@@ -13,6 +21,7 @@ for f in os.listdir("csv_data"):
 
         try:
             df = pd.read_csv(input_path, low_memory=False)
+            df = df[cols]
 
             filtered_df = df[
                 ((df["BS3_1"] == 1.0) & (df["BS12_47"] == 8.0)) |
