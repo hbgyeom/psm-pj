@@ -2,7 +2,6 @@ import os
 import pandas as pd
 
 cols = None
-
 for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
         df = pd.read_csv(os.path.join("csv_data", f), nrows=0)
