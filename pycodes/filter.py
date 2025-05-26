@@ -1,13 +1,15 @@
-import pandas as pd
 import os
+import pandas as pd
 
-os.makedirs("column_data", exist_ok=True)
+cols = None
 
-for f in os.listdir("row_data"):
+os.makedirs("filter_data", exist_ok=True)
+
+for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
-        input_path = os.path.join("row_data", f)
-        output_name = f"column_{f}"
-        output_path = os.path.join("column_data", output_name)
+        input_path = os.path.join("csv_data", f)
+        output_name = f"filter_{f}"
+        output_path = os.path.join("filter_data", output_name)
 
         try:
             df = pd.read_csv(input_path, low_memory=False)
@@ -18,7 +20,7 @@ for f in os.listdir("row_data"):
             ]
 
             filtered_df.to_csv(output_path, index=False, encoding="utf-8")
-            print(f"Filtered: {output_name} - {len(filtered_df)} rows")
+            print(f"Filtered: {output_name} - {len(filtered_df)} rows, {len(filtered_df.columns)} columns")
 
         except Exception as e:
             print(f"Failed: {f} - {e}")
