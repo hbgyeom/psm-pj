@@ -1,0 +1,70 @@
+==============================
+결과변수: MAP 
+==============================
+ Length   Class    Mode 
+      3 formula    call 
+
+	Welch Two Sample t-test
+
+data:  matched_data[[var]] by matched_data$group
+t = 0.96602, df = 809.82, p-value = 0.3343
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -0.758042  2.227190
+sample estimates:
+mean in group 0 mean in group 1 
+       91.66585        90.93128 
+
+
+==============================
+결과변수: HE_glu 
+==============================
+ Length   Class    Mode 
+      3 formula    call 
+
+	Welch Two Sample t-test
+
+data:  matched_data[[var]] by matched_data$group
+t = 1.4632, df = 781.81, p-value = 0.1438
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -0.8112916  5.5619211
+sample estimates:
+mean in group 0 mean in group 1 
+       102.5012        100.1259 
+
+
+==============================
+결과변수: HE_chol 
+==============================
+ Length   Class    Mode 
+      3 formula    call 
+
+	Welch Two Sample t-test
+
+data:  matched_data[[var]] by matched_data$group
+t = -1.7293, df = 803.84, p-value = 0.08413
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -9.880165  0.625023
+sample estimates:
+mean in group 0 mean in group 1 
+       193.4169        198.0444 
+
+
+==============================
+결과변수: HE_Uacid 
+==============================
+ Length   Class    Mode 
+      3 formula    call 
+
+	Welch Two Sample t-test
+
+data:  matched_data[[var]] by matched_data$group
+t = -0.64173, df = 805.91, p-value = 0.5212
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -0.2481416  0.1258673
+sample estimates:
+mean in group 0 mean in group 1 
+       5.869727        5.930864 
