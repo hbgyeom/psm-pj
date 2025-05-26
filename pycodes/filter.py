@@ -23,7 +23,7 @@ for f in os.listdir("csv_data"):
             df = df[cols]
 
             filtered_df = df[
-                ((df["BS3_1"] == 1.0) & (df["BS12_47"] == 8.0)) |
+                ((df["BS3_1"] == 1.0) & (df["BS12_37"] == 2.0)) |
                 ((df["BS3_1"] == 3.0) & (df["BS12_47"] == 1.0))
             ]
 
