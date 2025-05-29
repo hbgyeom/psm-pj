@@ -11,10 +11,10 @@ mydata <- mydata[!is.na(mydata$group), ]
 mydata$D_1_1B <- ifelse(mydata$D_1_1 == 9, NA,
                         ifelse(mydata$D_1_1 <= 3, 1, 0))
 
-myvars <- c("D_1_1B", "sex", "age", "BD1_11", "BP1", "BE9", "HE_BMI")
+myvars <- c("D_1_1B", "sex", "age", "BD1_11", "BD2_1","BP1", "BE9", "HE_BMI")
 mydata_clean <- mydata[complete.cases(mydata[, myvars]), ]
 
-psm_model <- matchit(group ~ age + sex + BD1_11 + BP1 + BE9 + HE_BMI,
+psm_model <- matchit(group ~ age + sex + BD1_11 + BD2_1 + BP1 + BE9 + HE_BMI,
                      data = mydata_clean,
                      method = "nearest")
 

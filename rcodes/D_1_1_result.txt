@@ -1,63 +1,68 @@
 Coefficients: (1 not defined because of singularities)
              Estimate Std. Error z value Pr(>|z|)
-(Intercept)  0.487336   0.536553   0.908    0.364
-age         -0.060740   0.004193 -14.487   <2e-16 ***
-sex         -0.117865   0.150905  -0.781    0.435
-BD1_11      -0.029608   0.035213  -0.841    0.400
-BP1         -0.086906   0.073143  -1.188    0.235
+(Intercept)  0.674086   0.551966   1.221   0.2220
+age         -0.060512   0.004202 -14.401   <2e-16 ***
+sex         -0.121815   0.151086  -0.806   0.4201
+BD1_11      -0.036042   0.036120  -0.998   0.3184
+BD2_1       -0.044460   0.030038  -1.480   0.1388
+BP1         -0.089701   0.073389  -1.222   0.2216
 BE9                NA         NA      NA       NA
-HE_BMI       0.030050   0.013673   2.198    0.028 *
+HE_BMI       0.030784   0.013685   2.250   0.0245 *
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
     Null deviance: 2491.8  on 3640  degrees of freedom
-Residual deviance: 2227.0  on 3635  degrees of freedom
-AIC: 2239
+Residual deviance: 2224.8  on 3634  degrees of freedom
+AIC: 2238.8
 
 Number of Fisher Scoring iterations: 5
 
 
 Call:
-matchit(formula = group ~ age + sex + BD1_11 + BP1 + BE9 + HE_BMI,
-    data = mydata_clean, method = "nearest")
+matchit(formula = group ~ age + sex + BD1_11 + BD2_1 + BP1 +
+    BE9 + HE_BMI, data = mydata_clean, method = "nearest")
 
 Summary of Balance for All Data:
          Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean
-distance        0.1672        0.1008          0.8430     0.8243    0.2620
+distance        0.1680        0.1007          0.8454     0.8353    0.2625
 age            40.7913       53.0970         -1.2439     0.4746    0.1994
 sex             1.1807        1.1595          0.0550     1.1067    0.0106
 BD1_11          3.9389        4.0853         -0.0958     0.7354    0.0315
+BD2_1           3.9059        4.1167         -0.1123     0.7971    0.0212
 BP1             2.6336        2.7909         -0.1998     1.0129    0.0310
 BE9            88.0000       88.0000          0.0000          .    0.0000
 HE_BMI         24.9835       24.1451          0.2116     1.1449    0.0589
          eCDF Max
-distance   0.4708
+distance   0.4596
 age        0.4530
 sex        0.0212
 BD1_11     0.0904
+BD2_1      0.0625
 BP1        0.0911
 BE9        0.0000
 HE_BMI     0.0888
 
 Summary of Balance for Matched Data:
          Means Treated Means Control Std. Mean Diff. Var. Ratio eCDF Mean
-distance        0.1672        0.1671          0.0008     1.0007    0.0004
-age            40.7913       40.8244         -0.0033     0.9496    0.0071
-sex             1.1807        1.1705          0.0264     1.0467    0.0051
-BD1_11          3.9389        4.0229         -0.0550     0.9120    0.0145
-BP1             2.6336        2.6158          0.0226     0.9615    0.0046
+distance        0.1680        0.1679          0.0006     1.0004    0.0003
+age            40.7913       40.7176          0.0075     0.9317    0.0076
+sex             1.1807        1.1934         -0.0330     0.9489    0.0064
+BD1_11          3.9389        4.0153         -0.0500     0.9942    0.0120
+BD2_1           3.9059        4.0254         -0.0637     1.1180    0.0301
+BP1             2.6336        2.6107          0.0291     0.9910    0.0046
 BE9            88.0000       88.0000          0.0000          .    0.0000
-HE_BMI         24.9835       25.0278         -0.0112     0.9153    0.0192
+HE_BMI         24.9835       25.0748         -0.0231     0.8498    0.0304
          eCDF Max Std. Pair Dist.
-distance   0.0127          0.0022
-age        0.0382          0.2770
-sex        0.0102          0.7398
-BD1_11     0.0534          1.1345
-BP1        0.0153          1.0563
+distance   0.0102          0.0019
+age        0.0331          0.3074
+sex        0.0127          0.8257
+BD1_11     0.0331          1.1328
+BD2_1      0.0738          1.0125
+BP1        0.0127          1.0563
 BE9        0.0000          0.0000
-HE_BMI     0.0560          1.0762
+HE_BMI     0.0687          1.1999
 
 Sample Sizes:
           Control Treated
@@ -72,16 +77,16 @@ glm(formula = D_1_1B ~ group, family = binomial, data = matched_data)
 
 Coefficients:
             Estimate Std. Error z value Pr(>|z|)
-(Intercept)   1.4119     0.1271   11.11  < 2e-16 ***
-group         0.5844     0.2008    2.91  0.00361 **
+(Intercept)   1.5292     0.1318  11.599   <2e-16 ***
+group         0.4671     0.2038   2.292   0.0219 *
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
-    Null deviance: 685.29  on 785  degrees of freedom
-Residual deviance: 676.60  on 784  degrees of freedom
-AIC: 680.6
+    Null deviance: 661.37  on 785  degrees of freedom
+Residual deviance: 656.03  on 784  degrees of freedom
+AIC: 660.03
 
 Number of Fisher Scoring iterations: 4
 
@@ -89,4 +94,4 @@ Number of Fisher Scoring iterations: 4
         Pearson's Chi-squared test with Yates' continuity correction
 
 data:  matched_data$D_1_1B and matched_data$group
-X-squared = 8.0527, df = 1, p-value = 0.004544
+X-squared = 4.8602, df = 1, p-value = 0.02748
