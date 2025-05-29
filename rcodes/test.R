@@ -5,7 +5,7 @@ mydata <- read.csv("/app/data/merged_filtered.csv")
 co_vars <- c(
              # 기본변수
              "sex", # 성별
-             "age", # 나이
+             "age" # 나이
 )
 
 out_vars <- c(
@@ -46,6 +46,7 @@ psm_model <- matchit(group ~ age + sex + BD1_11 + BP1 + BE9 + HE_BMI,
 
 matched_data <- match.data(psm_model)
 summary(psm_model$model)
+summary(psm_model)
 
 model <- glm(D_1_1B ~ group, data = matched_data, family = binomial)
 summary(model)
