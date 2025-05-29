@@ -16,7 +16,7 @@ mydata$group[mydata$BS3_1 == 1.0 & mydata$BS12_47 == 8.0] <- 0
 mydata <- mydata[!is.na(mydata$group), ]
 
 # 5. 매칭에 사용할 공변량 목록 지정
-covariates <- c("age", "sex", "BD1_11", "BD2_1", "BP1", "BE9", "HE_BMI")
+covariates <- c("age", "sex", "BD1_11", "BP1", "BE9", "HE_BMI")
 
 # 6. 공변량에 결측값이 있는 행 제거
 mydata_complete <- mydata[complete.cases(mydata[, covariates]), ]
