@@ -6,6 +6,7 @@ import pandas as pd
 cols = None
 filtered_dfs = []
 
+# Get columns that all csv files have in common
 for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
         df = pd.read_csv(os.path.join("csv_data", f), nrows=0)
@@ -14,8 +15,10 @@ for f in os.listdir("csv_data"):
         else:
             cols = [c for c in cols if c in df.columns]
 
+# Check if filter_data folder exists
 os.makedirs("filter_data", exist_ok=True)
 
+# 
 for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
         input_path = os.path.join("csv_data", f)
