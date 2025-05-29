@@ -1,10 +1,11 @@
+# This code leaves only common columns in all csv files and filters non-smokers data
+
 import os
 import pandas as pd
 
 cols = None
 filtered_dfs = []
 
-# 공통 컬럼 추출
 for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
         df = pd.read_csv(os.path.join("csv_data", f), nrows=0)
@@ -15,7 +16,6 @@ for f in os.listdir("csv_data"):
 
 os.makedirs("filter_data", exist_ok=True)
 
-# 필터링 및 개별 저장 + 병합용 리스트에 추가
 for f in os.listdir("csv_data"):
     if f.endswith(".csv"):
         input_path = os.path.join("csv_data", f)
@@ -39,7 +39,7 @@ for f in os.listdir("csv_data"):
         except Exception as e:
             print(f"Failed: {f} - {e}")
 
-# 병합 후 저장
+# Merge all csv file from year 2018 to 2023
 if filtered_dfs:
     merged_df = pd.concat(filtered_dfs, ignore_index=True)
     merged_df.to_csv("filter_data/merged_filtered.csv", index=False, encoding="utf-8")
