@@ -1,3 +1,5 @@
+# This code transfers sas data to csv data in sas_data folder and saves to csv_data folder
+
 import os
 import pyreadstat
 
