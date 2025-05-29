@@ -1,0 +1,55 @@
+
+===== Confounders Summary =====
+
+      sex             age           ho_incm           edu       
+ Min.   :1.000   Min.   :19.00   Min.   :1.000   Min.   :1.000  
+ 1st Qu.:1.000   1st Qu.:42.00   1st Qu.:2.000   1st Qu.:2.000  
+ Median :1.000   Median :53.00   Median :3.000   Median :3.000  
+ Mean   :1.161   Mean   :52.08   Mean   :2.587   Mean   :2.917  
+ 3rd Qu.:1.000   3rd Qu.:63.00   3rd Qu.:4.000   3rd Qu.:4.000  
+ Max.   :2.000   Max.   :80.00   Max.   :4.000   Max.   :4.000  
+                                 NA's   :11      NA's   :198    
+      occp          marri_1        EC_wht_23         BD1_11     
+ Min.   :1.000   Min.   :1.000   Min.   :  2.0   Min.   :1.000  
+ 1st Qu.:3.000   1st Qu.:1.000   1st Qu.: 40.0   1st Qu.:3.000  
+ Median :5.000   Median :1.000   Median : 48.0   Median :4.000  
+ Mean   :4.571   Mean   :1.204   Mean   :272.1   Mean   :4.078  
+ 3rd Qu.:7.000   3rd Qu.:1.000   3rd Qu.:888.0   3rd Qu.:5.000  
+ Max.   :7.000   Max.   :2.000   Max.   :999.0   Max.   :8.000  
+ NA's   :299                                                    
+     BD2_1            BE9       pa_aerobic         HE_fh            HE_BMI     
+ Min.   :1.000   Min.   :88   Min.   :0.0000   Min.   :0.0000   Min.   :11.44  
+ 1st Qu.:3.000   1st Qu.:88   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:21.66  
+ Median :4.000   Median :88   Median :0.0000   Median :1.0000   Median :23.91  
+ Mean   :4.095   Mean   :88   Mean   :0.3809   Mean   :0.8334   Mean   :24.21  
+ 3rd Qu.:5.000   3rd Qu.:88   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:26.31  
+ Max.   :8.000   Max.   :88   Max.   :1.0000   Max.   :9.0000   Max.   :46.28  
+                              NA's   :291      NA's   :133      NA's   :26     
+
+===== Outcomes Summary =====
+
+     D_1_1          BH2_61          HE_sbp          HE_dbp      
+ Min.   :1.00   Min.   :1.000   Min.   : 71.5   Min.   : 35.00  
+ 1st Qu.:3.00   1st Qu.:1.000   1st Qu.:110.0   1st Qu.: 70.00  
+ Median :3.00   Median :2.000   Median :119.0   Median : 76.50  
+ Mean   :3.38   Mean   :2.037   Mean   :120.9   Mean   : 77.03  
+ 3rd Qu.:4.00   3rd Qu.:2.000   3rd Qu.:130.0   3rd Qu.: 83.50  
+ Max.   :9.00   Max.   :9.000   Max.   :230.0   Max.   :139.00  
+                                NA's   :62      NA's   :62      
+     HE_glu         HE_HbA1c         HE_chol        HE_HDL_st2    
+ Min.   : 44.0   Min.   : 3.900   Min.   : 80.0   Min.   :  8.00  
+ 1st Qu.: 91.0   1st Qu.: 5.400   1st Qu.:161.0   1st Qu.: 40.00  
+ Median : 99.0   Median : 5.600   Median :189.0   Median : 47.00  
+ Mean   :105.9   Mean   : 5.864   Mean   :189.2   Mean   : 49.27  
+ 3rd Qu.:110.0   3rd Qu.: 6.000   3rd Qu.:215.0   3rd Qu.: 57.00  
+ Max.   :460.0   Max.   :12.900   Max.   :418.0   Max.   :130.00  
+ NA's   :104     NA's   :106      NA's   :104     NA's   :104     
+     HE_TG       HE_LDL_drct    
+ Min.   :  25   Min.   : 17.00  
+ 1st Qu.:  92   1st Qu.: 85.75  
+ Median : 135   Median :111.00  
+ Mean   : 172   Mean   :111.57  
+ 3rd Qu.: 199   3rd Qu.:136.00  
+ Max.   :2708   Max.   :251.00  
+ NA's   :104    NA's   :2084    
+

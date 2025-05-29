@@ -21,9 +21,6 @@ co_vars <- c(
 
              "HE_fh", # 만성질환 의사진단 가족력 여부
 
-             "HE_sbp", # 최종 수축기 혈압(2,3차 평균)
-             "HE_dbp", # 최종 이완기 혈압(2,3차 평균)
-
              "HE_BMI" # 체질량지수
 )
 
@@ -44,6 +41,9 @@ out_vars <- c(
               "HE_LDL_drct" # LDL-콜레스테롤
 )
 
+
+sink("overall.txt")
+
 cat("\n")
 cat("===== Confounders Summary =====\n")
 cat("\n")
@@ -53,3 +53,5 @@ cat("===== Outcomes Summary =====\n")
 cat("\n")
 summary(mydata[out_vars])
 cat("\n")
+
+sink()
