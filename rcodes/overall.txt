@@ -17,14 +17,14 @@
  3rd Qu.:7.000   3rd Qu.:1.000   3rd Qu.:888.0   3rd Qu.:5.000  
  Max.   :7.000   Max.   :2.000   Max.   :999.0   Max.   :8.000  
  NA's   :299                                                    
-     BD2_1            BE9       pa_aerobic         HE_fh            HE_BMI     
- Min.   :1.000   Min.   :88   Min.   :0.0000   Min.   :0.0000   Min.   :11.44  
- 1st Qu.:3.000   1st Qu.:88   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:21.66  
- Median :4.000   Median :88   Median :0.0000   Median :1.0000   Median :23.91  
- Mean   :4.095   Mean   :88   Mean   :0.3809   Mean   :0.8334   Mean   :24.21  
- 3rd Qu.:5.000   3rd Qu.:88   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:26.31  
- Max.   :8.000   Max.   :88   Max.   :1.0000   Max.   :9.0000   Max.   :46.28  
-                              NA's   :291      NA's   :133      NA's   :26     
+     BD2_1            BE9         HE_fh            HE_BMI     
+ Min.   :1.000   Min.   :88   Min.   :0.0000   Min.   :11.44  
+ 1st Qu.:3.000   1st Qu.:88   1st Qu.:0.0000   1st Qu.:21.66  
+ Median :4.000   Median :88   Median :1.0000   Median :23.91  
+ Mean   :4.095   Mean   :88   Mean   :0.8334   Mean   :24.21  
+ 3rd Qu.:5.000   3rd Qu.:88   3rd Qu.:1.0000   3rd Qu.:26.31  
+ Max.   :8.000   Max.   :88   Max.   :9.0000   Max.   :46.28  
+                              NA's   :133      NA's   :26     
 
 ===== Outcomes Summary =====
 
