@@ -68,3 +68,41 @@ alternative hypothesis: true difference in means between group 0 and group 1 is 
 sample estimates:
 mean in group 0 mean in group 1 
        5.869727        5.930864 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////주관적 건강//////////////////
+Call:
+glm(formula = D_1_1B ~ group, family = binomial, data = matched_data)
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   1.4119     0.1271   11.11  < 2e-16 ***
+group         0.5844     0.2008    2.91  0.00361 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 685.29  on 785  degrees of freedom
+Residual deviance: 676.60  on 784  degrees of freedom
+AIC: 680.6
+
+Number of Fisher Scoring iterations: 4
+
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  matched_data$D_1_1B and matched_data$group
+X-squared = 8.0527, df = 1, p-value = 0.004544
